@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Utopian Group on Utopian Society</title>
+    <link>http://localhost:1313/utopian-group/</link>
+    <description>Recent content in Utopian Group on Utopian Society</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <atom:link href="http://localhost:1313/utopian-group/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

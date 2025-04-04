@@ -1,0 +1,483 @@
+baseURL = 'https://utopian-society.github.io/'
+languageCode = 'zh-tw'
+title = 'Utopian Society'
+theme = 'hugo-universal-theme'
+defaultContentLanguage = "zh-tw"
+style = "green"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[services]
+[services.disqus]
+Shortname = "devcows"
+
+[params]
+    disabled_logo = false
+    logo_text = "Utopian Society"
+
+    logo = "img/logo.jpg"
+    logo_small = "img/logo-small.jpg"
+
+    enableGoogleMaps = false
+    googleMapsApiKey = "site_key_for_google_maps"
+
+    latitude = "-12.043333"
+    longitude = "-77.028333"
+    direction = "Desamparados Station, Distrito de Lima 15001, Peru"
+
+    email = "bibichan2010@protonmail.com"
+    contact_form_ajax = false
+
+    enableRecaptchaInContactForm = false
+    googleRecaptchaKey = "site_key_for_google_recaptcha"
+
+    dropdown_mouse_over = true
+
+    viewMorePostLink = "/blog/"
+    author = "bibichan"
+    defaultKeywords = ["Utopian", "Better", "Ideology"]
+    mainSections = ["blog"]
+    defaultDescription = "Give this ideology an ability to change the world"
+
+    copyright = "Copyright (c) 2025-2025, Utopian World; all rights reserved."
+
+    date_format = "January 2, 2006"
+
+    contact_url = "/contact"
+    address = """<p class="text-uppercase"><strong>Utopian World Unltd.</strong>
+        <br>7 Tai Yuk Road
+        <br>Yuen Long
+        <br>Hong Kong
+        <br>China
+        <br>
+        <strong>Earth</strong>
+      </p>
+      """
+[permalinks]
+    blog = "/blog/:year/:month/:day/:filename/"
+
+[params.topbar]
+    enable = true
+    text = """<p class="hidden-sm hidden-xs">Make a Glorious Human Society</p>
+      """
+
+[params.widgets]
+    categories = true
+    tags = true
+    search = true
+
+[params.carouselCustomers]
+    items = 6
+    auto_play = false
+    slide_speed = 2000
+    pagination_speed = 1000
+
+[params.carouselTestimonials]
+    items = 4
+    auto_play = false
+    slide_speed = 2000
+    pagination_speed = 1000
+
+[params.carouselHomepage]
+    # All carousel items are defined in their own files. You can find example items
+    # at 'exampleSite/data/carousel'.
+    # For more information take a look at the README.
+    enable = true
+    auto_play = true
+    slide_speed = 2000
+    pagination_speed = 1000
+
+[params.features]
+    enable = true
+    cols = 3 # Default: 3, Available values 2,3,4,6
+    # All features are defined in their own files. You can find example items
+    # at 'exampleSite/data/features'.
+    # For more information take a look at the README.
+
+[params.testimonials]
+    enable = true
+    # All testimonials are defined in their own files. You can find example items
+    # at 'exampleSite/data/testimonials'.
+    # For more information take a look at the README.
+    title = "Testimonials"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+[params.see_more]
+    enable = true
+    icon = "far fa-file-alt"
+    title = "Give this Ideology an ability to change the world"
+    subtitle = '"Utopian Socialism", or "Capitalism wih Utopian Characteristics", is an ideology brainstormed by our team. It aimed to create a free human world and enhance human development.'
+    link_url = "#"
+    link_text = "Learn more"
+
+[params.clients]
+    enable = true
+    # All clients are defined in their own files. You can find example items
+    # at 'exampleSite/data/clients'.
+    # For more information take a look at the README.
+    title = "Our Clients"
+    subtitle = ""
+
+[params.recent_posts]
+    enable = true
+    title = "From our blog"
+    subtitle = "See our recent posts"
+    hide_summary = false
+
+[params.footer.recent_posts]
+    enable = true
+
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+    author = "Utopian Group"
+
+[menu]
+[[menu.main]]
+    name       = "Home"
+    identifier = "menu.home"
+    url        = "/"
+    weight     = 1
+[[menu.main]]
+    name       = "Option 1: Default Page"
+    url        = "/"
+    weight     = 1
+    parent     = "menu.home"
+
+[[menu.main]]
+    name       = "Option 2: Application"
+    url        = "/"
+    weight     = 2
+    parent     = "menu.home"
+
+[[menu.main]]
+    name       = "Option 3: Startup"
+    url        = "/"
+    weight     = 3
+    parent     = "menu.home"
+
+[[menu.main]]
+    name       = "Option 4: Agency"
+    url        = "/"
+    weight     = 4
+    parent     = "menu.home"
+
+[[menu.main]]
+    name       = "Option 5: Portfolio"
+    url        = "/"
+    weight     = 5
+    parent     = "menu.home"
+
+[[menu.main]]
+    name       = "Features"
+    identifier = "menu.features"
+    url        = "/img/logo.jpg"
+    weight     = 3
+
+[[menu.main]]
+    name       = "Shortcodes"
+    identifier = "section.shortcodes"
+    url        = ""
+    weight     = 1
+    parent     = "menu.features"
+    post       = 1
+
+[[menu.main]]
+    name       = "Header variations"
+    identifier = "section.headervariations"
+    url        = ""
+    weight     = 2
+    parent     = "menu.features"
+    post       = 2
+
+[[menu.main]]
+    name       = "Accordions"
+    url        = ""
+    weight     = 1
+    parent     = "section.shortcodes"
+
+[[menu.main]]
+    name       = "Alerts"
+    url        = ""
+    weight     = 2
+    parent     = "section.shortcodes"
+
+[[menu.main]]
+    name       = "Buttons"
+    url        = ""
+    weight     = 3
+    parent     = "section.shortcodes"
+
+[[menu.main]]
+    name       = "Content Boxes"
+    url        = ""
+    weight     = 4
+    parent     = "section.shortcodes"
+
+[[menu.main]]
+    name       = "Horizontal Blocks"
+    url        = ""
+    weight     = 5
+    parent     = "section.shortcodes"
+
+[[menu.main]]
+    name       = "Pagination"
+    url        = ""
+    weight     = 6
+    parent     = "section.shortcodes"
+
+[[menu.main]]
+    name       = "Tabs"
+    url        = ""
+    weight     = 7
+    parent     = "section.shortcodes"
+
+[[menu.main]]
+    name       = "Typography"
+    url        = ""
+    weight     = 8
+    parent     = "section.shortcodes"
+
+[[menu.main]]
+    name       = "Default Sticky Header"
+    url        = ""
+    weight     = 1
+    parent     = "section.headervariations"
+
+[[menu.main]]
+    name       = "No Sticky Header"
+    url        = ""
+    weight     = 2
+    parent     = "section.headervariations"
+
+[[menu.main]]
+    name       = "Light Header"
+    url        = ""
+    weight     = 3
+    parent     = "section.headervariations"
+
+[[menu.main]]
+    name       = "Portfolio"
+    identifier = "section.portfolio"
+    url        = ""
+    weight     = 1
+    parent     = "menu.portfolio"
+    post       = 1
+
+[[menu.main]]
+    name       = "2 Columns"
+    url        = ""
+    weight     = 1
+    parent     = "section.portfolio"
+
+[[menu.main]]
+    name       = "2 Columns With Negative Space"
+    url        = ""
+    weight     = 2
+    parent     = "section.portfolio"
+
+[[menu.main]]
+    name       = "3 Columns"
+    url        = ""
+    weight     = 3
+    parent     = "section.portfolio"
+
+[[menu.main]]
+    name       = "3 Columns With Negative Space"
+    url        = ""
+    weight     = 4
+    parent     = "section.portfolio"
+
+[[menu.main]]
+    name       = "4 Columns"
+    url        = ""
+    weight     = 5
+    parent     = "section.portfolio"
+
+[[menu.main]]
+    name       = "4 Columns With Negative Space"
+    url        = ""
+    weight     = 6
+    parent     = "section.portfolio"
+
+[[menu.main]]
+    name       = "Portfolio - detail"
+    url        = ""
+    weight     = 7
+    parent     = "section.portfolio"
+
+[[menu.main]]
+    name       = "Portfolio - detail 2"
+    url        = ""
+    weight     = 8
+    parent     = "section.portfolio"
+
+[[menu.main]]
+    name       = "About"
+    identifier = "section.about"
+    url        = ""
+    weight     = 2
+    parent     = "menu.portfolio"
+    post       = 2
+
+[[menu.main]]
+    name       = "About Us"
+    url        = ""
+    weight     = 1
+    parent     = "section.about"
+
+[[menu.main]]
+    name       = "Our Team"
+    url        = ""
+    weight     = 2
+    parent     = "section.about"
+
+[[menu.main]]
+    name       = "Marketing"
+    identifier = "section.marketing"
+    url        = ""
+    weight     = 3
+    parent     = "menu.portfolio"
+    post       = 2
+
+[[menu.main]]
+    name       = "Packages"
+    url        = ""
+    weight     = 1
+    parent     = "section.marketing"
+
+[[menu.main]]
+    name       = "All Pages"
+    identifier = "menu.allpages"
+    url        = ""
+    weight     = 4
+
+[[menu.main]]
+    name       = "Home"
+    identifier = "section.ap-home"
+    url        = ""
+    weight     = 1
+    parent     = "menu.allpages"
+    post       = 1
+
+[[menu.main]]
+    name       = "About"
+    identifier = "section.ap-about"
+    url        = ""
+    weight     = 2
+    parent     = "menu.allpages"
+    post       = 1
+
+[[menu.main]]
+    name       = "Marketing"
+    identifier = "section.ap-marketing"
+    url        = ""
+    weight     = 3
+    parent     = "menu.allpages"
+    post       = 1
+
+[[menu.main]]
+    name       = "Portfolio"
+    identifier = "section.ap-portfolio"
+    url        = ""
+    weight     = 1
+    parent     = "menu.allpages"
+    post       = 2
+
+[[menu.main]]
+    name       = "User Pages"
+    identifier = "section.ap-userpages"
+    url        = ""
+    weight     = 2
+    parent     = "menu.allpages"
+    post       = 2
+
+[[menu.main]]
+    name       = "Shop"
+    identifier = "section.ap-shop"
+    url        = ""
+    weight     = 1
+    parent     = "menu.allpages"
+    post       = 3
+
+[[menu.main]]
+    name       = "Shop - Order Process"
+    identifier = "section.ap-shoporderprocess"
+    url        = ""
+    weight     = 2
+    parent     = "menu.allpages"
+    post       = 3
+
+[[menu.main]]
+    name       = "Contact"
+    identifier = "section.ap-contact"
+    url        = ""
+    weight     = 1
+    parent     = "menu.allpages"
+    post       = 4
+
+[[menu.main]]
+    name       = "Pages"
+    identifier = "section.ap-pages"
+    url        = ""
+    weight     = 2
+    parent     = "menu.allpages"
+    post       = 4
+
+[[menu.main]]
+    name       = "Blog"
+    identifier = "section.ap-blog"
+    url        = "/blog/"
+    weight     = 3
+    parent     = "menu.allpages"
+    post       = 4
+
+[[menu.main]]
+    name       = "Blog Listing Big"
+    url        = "/blog/"
+    weight     = 1
+    parent     = "section.ap-blog"
+
+[[menu.main]]
+    name       = "Blog"
+    identifier = "menu.blog"
+    url        = "/blog/"
+    weight     = 5
+
+[[menu.main]]
+    name       = "FAQ"
+    identifier = "menu.faq"
+    url        = "/faq/"
+    weight     = 6
+
+[[menu.main]]
+    identifier = "contact"
+    name       = "Contact"
+    url        = "/contact/"
+    weight     = 7
+
+[[menu.topbar]]
+    weight = 1
+    name = "GitHub"
+    url = "https://github.com/utopian-society"
+    pre = "<i class='fab fa-2x fa-github'></i>"
+
+[[menu.topbar]]
+    weight = 2
+    name = "Facebook"
+    url = "https://facebook.com"
+    pre = "<i class='fab fa-2x fa-facebook'></i>"
+
+[[menu.topbar]]
+    weight = 3
+    name = "X"
+    url = "https://x.com"
+    pre = "<i class='fab fa-2x fa-x-twitter'></i>"
+
+[[menu.topbar]]
+    weight = 4
+    name = "Email"
+    url = "bibichan2010@protonmail.com"
+    pre = "<i class='fas fa-2x fa-envelope'></i>"
