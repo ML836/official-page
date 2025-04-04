@@ -11,7 +11,7 @@ style = "green"
 
 [services]
 [services.disqus]
-Shortname = "devcows"
+Shortname = "bibichan"
 
 [params]
     disabled_logo = false
