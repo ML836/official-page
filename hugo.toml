@@ -41,7 +41,7 @@ Shortname = "bibichan"
     mainSections = ["blog"]
     defaultDescription = "Give this ideology an ability to change the world"
 
-    copyright = "Copyright (c) 2025-2025, Utopian World; all rights reserved."
+    copyright = "Copyright (c) 2025-2025, Utopian World Unltd.; all rights reserved."
 
     date_format = "January 2, 2006"
 
